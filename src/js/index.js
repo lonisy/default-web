@@ -5,6 +5,9 @@ $(function () {
     function randomImage() {
         var width = Math.round(Math.random() * 100, 2) * 10;
         var height = Math.round(Math.random() * 100, 2) * 10;
+        // var placeholderUrl = 'http://lorempixel.com/';
+        var placeholderUrl = 'http://placeimg.com/'; // 必须 http://placeimg.com/width/height
+        // var placeholderUrl = 'https://unsplash.it/';
         if (width < 100) {
             width = 250;
         }
@@ -12,7 +15,8 @@ $(function () {
             height = 250;
         }
         var img = new Image();
-        img.setAttribute('data-original', "https://unsplash.it/" + width + "/" + height + "/?random");
+        // img.setAttribute('data-original', placeholderUrl + width + "/" + height + "/?random");
+        img.setAttribute('data-original', placeholderUrl + width + "/" + height);
         img.width = width;
         img.height = height;
         $(img).lazyload();
