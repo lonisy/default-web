@@ -6,9 +6,9 @@ $(function () {
         var width = Math.round(Math.random() * 100, 2) * 10;
         var height = Math.round(Math.random() * 100, 2) * 10;
         // var placeholderUrl = 'http://lorempixel.com/';
-        // var placeholderUrl = 'http://placeimg.com/'; // 必须 http://placeimg.com/width/height
+        var placeholderUrl = 'http://placeimg.com/'; // 必须 http://placeimg.com/width/height
         // var placeholderUrl = 'https://unsplash.it/';
-        var placeholderUrl = '/show-picture/';
+        // var placeholderUrl = '/show-picture/';
         if (width < 100) {
             width = 250;
         }
