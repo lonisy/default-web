@@ -46,7 +46,9 @@ $(function () {
             ipc.html('豫ICP备15032266号-3');
         } else if (document.domain == 'www.hwjiao.com') {
             ipc.html('豫ICP备15032266号-1');
-        } else {
+        } else if (document.domain == 'www.soudnet.com') {
+            ipc.html('就不告诉你!');
+        }  else {
             ipc.html('豫ICP备15032266号');
         }
     }

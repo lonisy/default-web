@@ -12,6 +12,12 @@ gulp.project = {
     distJsPath: 'dist/js',
 };
 
+
+// gulp.task('copy',  function() {
+//   return gulp.src('src/**/*')
+//     .pipe(gulp.dest(destDir))
+// });
+
 gulp.task('minify-css', function () {
     gulp.src(['./src/css/jquery.mosaic.min.css', './src/css/style.min.css'])
       .pipe(concat('main.min.css'))
