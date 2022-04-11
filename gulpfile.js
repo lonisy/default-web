@@ -12,7 +12,6 @@ gulp.project = {
     distJsPath: 'dist/js',
 };
 
-
 // gulp.task('copy',  function() {
 //   return gulp.src('src/**/*')
 //     .pipe(gulp.dest(destDir))

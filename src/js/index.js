@@ -6,7 +6,9 @@ $(function () {
         var width = Math.round(Math.random() * 100, 2) * 10;
         var height = Math.round(Math.random() * 100, 2) * 10;
         // var placeholderUrl = 'http://lorempixel.com/';
-        var placeholderUrl = 'http://placeimg.com/'; // 必须 http://placeimg.com/width/height
+        // var placeholderUrl = 'http://placeimg.com/'; // 必须 http://placeimg.com/width/height
+        var placeholderUrl = 'https://picsum.photos/seed/'; // 必须 http://placeimg.com/width/height
+        placeholderUrl = placeholderUrl + Math.round(Math.random() * 100, 2) * 100 + '/'
         // var placeholderUrl = 'https://unsplash.it/';
         // var placeholderUrl = '/show-picture/';
         if (width < 100) {
@@ -40,17 +42,15 @@ $(function () {
     initImage();
 
     function initICPinfo() {
-        //document.title
         var ipc = $('#icpinfo');
         if (document.domain == 'www.baofenginfo.com') {
             ipc.html('豫ICP备15032266号-3');
         } else if (document.domain == 'www.hwjiao.com') {
             ipc.html('豫ICP备15032266号-1');
-        } else if (document.domain == 'www.soudnet.com') {
-            document.title = 'SOUDNET点咖默';
-            ipc.html('陕ICP备16006139号!');
+        } else if (document.domain == 'www.ai-shanghai.com') {
+            ipc.html('豫ICP备15032266号-2');
         }  else {
-            ipc.html('豫ICP备15032266号');
+            ipc.html('豫ICP备15032266号-2');
         }
     }
     initICPinfo();
